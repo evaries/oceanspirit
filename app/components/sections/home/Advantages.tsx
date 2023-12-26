@@ -24,7 +24,7 @@ const Advantages = () => {
     },
   ];
   return (
-    <section className="flex flex-col items-center">
+    <section id="advantages" className="flex flex-col items-center">
       <h3 className="subtitle-1 mt-28">
         Enjoy surfing, we will take care of the rest
       </h3>

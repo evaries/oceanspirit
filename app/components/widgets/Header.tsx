@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { useOutsideClick } from "../utils";
+import Modal from "./Modal";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

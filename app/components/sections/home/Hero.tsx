@@ -1,6 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Button from "../../atoms/PrimaryButton";
+import { scrolltoHash } from "../../utils";
+import Modal from "../../widgets/Modal";
 
 const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="relative h-screen flex items-end justify-center max-h-[860px]">
       <div
@@ -16,8 +22,16 @@ const Hero = () => {
         </p>
 
         <div className="grid grid-cols-2 gap-9 pt-10 pb-16">
-          <Button text="Book" type="primary" />
-          <Button text="Learn more" type="secondary" />
+          <Button
+            text="Book"
+            type="primary"
+            onClick={() => scrolltoHash("destinations")}
+          />
+          <Button
+            text="Learn more"
+            type="secondary"
+            onClick={() => scrolltoHash("advantages")}
+          />
         </div>
       </div>
     </section>
