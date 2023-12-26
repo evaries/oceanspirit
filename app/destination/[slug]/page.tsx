@@ -1,4 +1,6 @@
+"use client";
 import Button from "@/app/components/atoms/PrimaryButton";
+import { scrolltoHash } from "@/app/components/utils";
 import { destinations } from "@/app/data";
 import Image from "next/image";
 import { redirect } from "next/navigation";
@@ -24,7 +26,11 @@ const Destination = ({ params }: { params: { slug: string } }) => {
         </p>
         <div className="grid grid-cols-2 gap-5 mt-7">
           <Button type="primary" text="Book" />
-          <Button type="secondary" text="Learn More" />
+          <Button
+            type="secondary"
+            text="Details"
+            onClick={() => scrolltoHash("destination-details")}
+          />
         </div>
       </div>
       <div className="grid grid-cols-2 w-full max-w-7xl gap-10 py-8">
@@ -69,7 +75,10 @@ const Destination = ({ params }: { params: { slug: string } }) => {
           <p className="mt-7">{content.descriptions.spots}</p>
         </div>
       </div>
-      <div className="grid grid-cols-2 w-full max-w-7xl gap-10 mb-28 py-8 ">
+      <div
+        id="destination-details"
+        className="grid grid-cols-2 w-full max-w-7xl gap-10 mb-28 py-8 "
+      >
         <div className="flex flex-col w-full max-w-[600px]">
           <div className="flex flex-col justify-between h-full">
             <div>

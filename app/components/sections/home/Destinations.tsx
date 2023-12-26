@@ -1,10 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Button from "../../atoms/PrimaryButton";
 import Link from "next/link";
+import Modal from "../../widgets/Modal";
+import { useState } from "react";
+import ContactModal from "../../widgets/ContactModal";
 
 const Destinations = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <section>
+    <section id="destinations">
       <h3 className="subtitle-1 mt-20 text-center">Destinations</h3>
       <div className="grid grid-cols-2 gap-14 mt-24">
         <div className="image flex justify-end">
@@ -28,7 +34,11 @@ const Destinations = () => {
             <li>Beaches</li>
           </ul>
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
-            <Button type="primary" text="Book" />
+            <Button
+              type="primary"
+              text="Book"
+              onClick={() => setIsModalOpen(true)}
+            />
             <Link href={"/destination/g-land"}>
               <Button type="secondary" text="Learn more" />
             </Link>
@@ -49,7 +59,11 @@ const Destinations = () => {
             <li>Beaches</li>
           </ul>
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
-            <Button type="primary" text="Book" />
+            <Button
+              type="primary"
+              text="Book"
+              onClick={() => setIsModalOpen(true)}
+            />
             <Link href={"/destination/lombok"}>
               <Button type="secondary" text="Learn more" />
             </Link>
@@ -88,11 +102,18 @@ const Destinations = () => {
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
             <Button type="primary" text="Book" />
             <Link href={"/destination/sumbawa"}>
-              <Button type="secondary" text="Learn more" />
+              <Button
+                type="secondary"
+                text="Learn more"
+                onClick={() => setIsModalOpen(true)}
+              />
             </Link>
           </div>
         </div>
       </div>
+      <Modal handleClose={() => setIsModalOpen(false)} isOpen={isModalOpen}>
+        <ContactModal />
+      </Modal>
     </section>
   );
 };
