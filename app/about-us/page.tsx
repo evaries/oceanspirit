@@ -1,5 +1,5 @@
-import OurTeam from "../components/sections/about/Team";
-import WhoWeAre from "../components/sections/about/WhoWeAre";
+import OurTeam from "../components/pages/about/Team";
+import WhoWeAre from "../components/pages/about/WhoWeAre";
 
 const AboutUs = () => {
   return (

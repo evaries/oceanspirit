@@ -3,7 +3,7 @@ import Image from "next/image";
 const WhoWeAre = () => {
   return (
     <section>
-      <div className="grid grid-cols-2 gap-14 mt-40">
+      <div className="grid grid-cols-2 gap-14 mt-10">
         <div className="image flex justify-end">
           <Image
             src="/images/destintaion-lombok.png"

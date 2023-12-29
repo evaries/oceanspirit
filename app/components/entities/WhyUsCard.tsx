@@ -7,7 +7,7 @@ export type WhyUsCardProps = {
 };
 const WhyUsCard: React.FC<WhyUsCardProps> = ({ title, description, icon }) => {
   return (
-    <div className="max-w-[370px] w-full flex flex-col items-center text-center">
+    <div className="max-w-full md:max-w-[370px] w-full flex flex-col items-center text-center">
       <Image
         src={icon}
         width={370}
