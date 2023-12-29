@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Header from "./components/widgets/Header";
+import { useWindowSize } from "./components/utils";
 import Footer from "./components/widgets/Footer";
+import TopBar from "./components/widgets/TopBar";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ocean Spirit",
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
+        <TopBar />
         {children}
         <Footer />
       </body>

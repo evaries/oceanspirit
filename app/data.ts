@@ -1,3 +1,152 @@
+export const navLinks = [
+  {
+    name: "G-land",
+    url: "/destination/g-land",
+  },
+  {
+    name: "Lombok",
+    url: "/destination/lombok",
+  },
+  {
+    name: "Sumbawa",
+    url: "/destination/sumbawa",
+  },
+];
+
+export const destination = [
+  {
+    title: "G-Land",
+    description:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    features: [
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+    ],
+    direction: "right" as const,
+  },
+  {
+    title: "G-Land",
+    description:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    features: [
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+    ],
+    direction: "left" as const,
+  },
+  {
+    title: "G-Land",
+    description:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    features: [
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+      "Lorem ipsum dolor sit amet, qui minim labore ",
+    ],
+    direction: "right" as const,
+  },
+];
+
+export const faq = [
+  {
+    id: 0,
+    question: "Can i come to the surf camp if i’ve never surfed before?",
+    answer:
+      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
+  },
+  {
+    id: 1,
+    question: "Can i come to the surf camp if i’ve never surfed before?",
+    answer:
+      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
+  },
+  {
+    id: 2,
+    question: "Can i come to the surf camp if i’ve never surfed before?",
+    answer:
+      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
+  },
+  {
+    id: 3,
+    question: "Can i come to the surf camp if i’ve never surfed before?",
+    answer:
+      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
+  },
+  {
+    id: 4,
+    question: "Can i come to the surf camp if i’ve never surfed before?",
+    answer:
+      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
+  },
+];
+
+export const whyUs = [
+  {
+    icon: "/images/why-us-1.png",
+    title: "Surfing",
+    description:
+      "Surfing is the basis of the camp's activities. Our task is to show you the surfing life, teach you how to catch waves, and give you useful knowledge and skills. Our program includes 7 surfing lessons and 3 independent sessions under the supervision of a coach, surf trips to fishing spots, photo and video shooting, video analysis of the rides, surfing seminars and homework to speed up progress.",
+  },
+  {
+    icon: "/images/why-us-1.png",
+    title: "Surfing",
+    description:
+      "Surfing is the basis of the camp's activities. Our task is to show you the surfing life, teach you how to catch waves, and give you useful knowledge and skills. Our program includes 7 surfing lessons and 3 independent sessions under the supervision of a coach, surf trips to fishing spots, photo and video shooting, video analysis of the rides, surfing seminars and homework to speed up progress.",
+  },
+  {
+    icon: "/images/why-us-1.png",
+    title: "Surfing",
+    description:
+      "Surfing is the basis of the camp's activities. Our task is to show you the surfing life, teach you how to catch waves, and give you useful knowledge and skills. Our program includes 7 surfing lessons and 3 independent sessions under the supervision of a coach, surf trips to fishing spots, photo and video shooting, video analysis of the rides, surfing seminars and homework to speed up progress.",
+  },
+];
+
+export const socialIcons = [
+  {
+    id: "wa",
+    url: "https://api.whatsapp.com/send?phone=380636296840&text=Hello%2C%20I%27m%20interested%20about%20trip%20to%20G-_land.",
+    icon: "/icons/ic_whatsapp.svg",
+  },
+  {
+    id: "tg",
+    url: "https://t.me/jkulish",
+    icon: "/icons/ic_telegram.svg",
+  },
+  {
+    id: "ig",
+    url: "https://www.instagram.com/oceanspiritsurf",
+    icon: "/icons/ic_instagram.svg",
+  },
+];
+
+export const advantages = [
+  {
+    icon: "/icons/ic_house.svg",
+    title: "Stay with us",
+    description: "We will find the best place for you to stay",
+  },
+  {
+    icon: "/icons/ic_house.svg",
+    title: "Stay with us",
+    description: "We will find the best place for you to stay",
+  },
+  {
+    icon: "/icons/ic_house.svg",
+    title: "Stay with us",
+    description: "We will find the best place for you to stay",
+  },
+  {
+    icon: "/icons/ic_house.svg",
+    title: "Stay with us",
+    description: "We will find the best place for you to stay",
+  },
+];
+
 export const reviews = [
   {
     name: "Chris Christenson",
@@ -15,6 +164,7 @@ export const reviews = [
       "The best team ever. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam. Ut enim ad minim veniam.",
   },
 ];
+
 export const destinations = [
   {
     name: "g-land",

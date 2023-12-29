@@ -7,7 +7,7 @@ export type ReviewCardProps = {
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ name, review }) => {
   return (
-    <div className="flex flex-col p-5 w-full max-w-[420px] h-[230px] rounded-xl shadow-lg">
+    <div className="flex flex-col p-5 w-full max-w-[420px] min-h-[230px] h-fit rounded-xl shadow-lg">
       <div className="flex flex-row">
         <Image
           src={"/icons/ic_avatar.svg"}
@@ -15,7 +15,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ name, review }) => {
           height={46}
           alt="avatar"
         />
-        <span className="ml-3">{name}</span>
+        <span className="ml-3 flex items-center">{name}</span>
       </div>
       <p className="mt-7">{review}</p>
     </div>

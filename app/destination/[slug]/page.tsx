@@ -1,5 +1,5 @@
 "use client";
-import Button from "@/app/components/atoms/PrimaryButton";
+import Button from "@/app/components/shared/Button";
 import { scrolltoHash } from "@/app/components/utils";
 import { destinations } from "@/app/data";
 import Image from "next/image";
@@ -19,7 +19,7 @@ const Destination = ({ params }: { params: { slug: string } }) => {
   const { content } = info;
   return (
     <section className="flex flex-col items-center px-8">
-      <div className="flex flex-col w-full max-w-7xl items-center mt-24 mb-8">
+      <div className="flex flex-col w-full max-w-7xl items-center mt-10 mb-8">
         <h1 className="h2 text-center">{content.title}</h1>
         <p className="mt-5 w-full max-w-4xl text-center">
           {content.descriptions.main}

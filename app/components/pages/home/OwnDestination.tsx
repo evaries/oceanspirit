@@ -1,6 +1,6 @@
 const OwnDestination = () => {
   return (
-    <section>
+    <section className="section">
       <h3 className="subtitle-1 mt-28 text-center">
         Have a dream surf destination that we have not listed?
       </h3>
