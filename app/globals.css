@@ -89,7 +89,7 @@
 
 @layer components {
   .section {
-@apply max-w-[1440px] px-6;
+   @apply max-w-[1440px] px-6 mx-auto;
   }
   .h2 {
     @apply text-6xl font-bold;
@@ -120,6 +120,9 @@
   }
   .nav-link {
     @apply text-sm uppercase cursor-pointer font-bold;
+  }
+  .nav-link-mobile {
+    @apply text-xl uppercase cursor-pointer font-bold text-surface-550 py-3;
   }
   .triangle {
     @apply border-l-[6px] border-l-transparent border-t-[6px] border-t-black border-r-[5px] border-r-transparent;

@@ -1,4 +1,6 @@
 "use client";
+
+import { BookDialog } from "@/app/components/entities/BookDialog";
 import Button from "@/app/components/shared/Button";
 import { scrolltoHash } from "@/app/components/utils";
 import { destinations } from "@/app/data";
@@ -25,7 +27,7 @@ const Destination = ({ params }: { params: { slug: string } }) => {
           {content.descriptions.main}
         </p>
         <div className="grid grid-cols-2 gap-5 mt-7">
-          <Button type="primary" text="Book" />
+          <BookDialog />
           <Button
             type="secondary"
             text="Details"
@@ -102,7 +104,7 @@ const Destination = ({ params }: { params: { slug: string } }) => {
                 <span>Price: ${content.package.price}</span>
                 <span>Level: {content.package.level}</span>
               </div>
-              <Button type="primary" text="Book" />
+              <BookDialog />
             </div>
           </div>
         </div>

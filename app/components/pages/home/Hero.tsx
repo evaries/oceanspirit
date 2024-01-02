@@ -13,7 +13,7 @@ const Hero = () => {
           backgroundImage: `url('/images/video.png')`,
         }}
       />
-      <section className="section relative h-[calc(100vh-104px)]  flex items-end justify-center ">
+      <section className="section relative h-[calc(100vh-104px)] flex items-end justify-center">
         <div className="flex flex-col justify-center items-center align-bottom">
           <h1 className="h3 text-center">Surf trips in Indonesia</h1>
           <p className="p pt-4 text-center">

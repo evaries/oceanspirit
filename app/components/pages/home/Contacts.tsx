@@ -7,7 +7,7 @@ const Contacts = () => {
         Have another question? Don’t hesitate to ask
       </h3>
       <div className="flex">
-        <SocialContacts />
+        <SocialContacts className="mt-10" />
       </div>
     </section>
   );
