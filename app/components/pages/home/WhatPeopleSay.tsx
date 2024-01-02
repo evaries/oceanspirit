@@ -1,5 +1,5 @@
 import { reviews } from "@/app/data";
-import ReviewCard from "../../widgets/ReviewCard";
+import { ReviewCard } from "../../entities/ReviewCard";
 
 const WhatPeopleSay = () => {
   return (

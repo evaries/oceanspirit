@@ -2,6 +2,7 @@ import Link from "next/link";
 // import Button from "../shared/Button";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { BookDialog } from "./BookDialog";
 
 export type DestionationProps = {
   title: string;
@@ -47,8 +48,8 @@ const Destination: React.FC<DestionationProps> = ({
             })}
           </ul>
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
-            <Button size="lg">BOOK</Button>
-            <Button size="lg" variant="outline" asChild onClick={action}>
+            <BookDialog />
+            <Button size="lg" variant="outline" asChild>
               <Link href={"/destination/g-land"}>Learn more</Link>
             </Button>
           </div>
