@@ -10,11 +10,17 @@ import {
 } from "@/components/ui/dialog";
 import SocialContacts from "./SocialContacts";
 
-export const BookDialog = () => {
+export type BookDialogProps = {
+  triggerClass?: string;
+};
+
+export const BookDialog: React.FC<BookDialogProps> = ({ triggerClass }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button size="lg">BOOK</Button>
+        <Button size="lg" className={triggerClass}>
+          BOOK
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>

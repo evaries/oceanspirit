@@ -1,21 +1,16 @@
 import Image from "next/image";
+import { SectionImage } from "../../shared/SectionImage";
 
 const OurTeam = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="section flex flex-col items-center">
       <h3 className="subtitle-1 mt-20">Our Team</h3>
-      <div className="grid grid-cols-[35%_65%] gap-14 mt-20">
-        <div className="image flex justify-start">
-          <Image
-            src="/images/rus.png"
-            width={385}
-            height={332}
-            alt="destination"
-          />
-        </div>
-        <div className="content max-w-[650px] w-full">
-          <h3 className="subtitle-2">Head coach Ruslan</h3>
-          <div className="p mt-3">
+      <h3 className="subtitle-2 mt-10 md:hidden">Head coach Ruslan</h3>
+      <div className="grid w-full md:grid-cols-[30%_1fr] gap-5 md:gap-14 mt-10 md:mt-20">
+        <SectionImage src="/images/rus.png" width={500} alt="Head coach" />
+        <div className="content w-full">
+          <h3 className="subtitle-2 hidden md:block">Head coach Ruslan</h3>
+          <div className="mt-3">
             <ul>
               <li> - experience as a surf instructor -7.5 years</li>
               <li>
@@ -40,10 +35,11 @@ const OurTeam = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-[65%_35%] gap-14 mt-20">
-        <div className="content max-w-[650px] w-full">
-          <h3 className="subtitle-2">Chief curator Julia</h3>
-          <div className="p mt-3">
+      <h3 className="subtitle-2 mt-10 md:hidden">Chief curator Julia</h3>
+      <div className="grid w-full md:grid-cols-[1fr_30%] gap-5 md:gap-14 mt-10 md:mt-20">
+        <div className="content w-full">
+          <h3 className="subtitle-2 hidden md:block">Chief curator Julia</h3>
+          <div className="mt-3">
             <ul>
               <li>– 14 years of experience in organizing various events </li>
               <li>
@@ -64,14 +60,12 @@ const OurTeam = () => {
             />
           </div>
         </div>
-        <div className="image flex justify-start">
-          <Image
-            src="/images/julia.png"
-            width={385}
-            height={332}
-            alt="destination"
-          />
-        </div>
+        <SectionImage
+          src="/images/julia.png"
+          width={500}
+          alt="Chief curator"
+          isReverse
+        />
       </div>
     </section>
   );
