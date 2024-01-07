@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { useWindowSize } from "./components/utils";
-import Footer from "./components/widgets/Footer";
-import TopBar from "./components/widgets/TopBar";
+import { Footer } from "./layout/widgets/footer";
+import TopBar from "./layout/widgets/top-bar";
 import "./globals.css";
 
 export const metadata: Metadata = {
