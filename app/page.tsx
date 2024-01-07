@@ -1,11 +1,11 @@
-import Advantages from "./components/pages/home/Advantages";
-import Contacts from "./components/pages/home/Contacts";
-import Destinations from "./components/pages/home/Destinations";
-import FAQ from "./components/pages/home/FAQ";
-import Hero from "./components/pages/home/Hero";
-import OwnDestination from "./components/pages/home/OwnDestination";
-import WhatPeopleSay from "./components/pages/home/WhatPeopleSay";
-import WhyUs from "./components/pages/home/WhyUs";
+import { Advantages } from "./layout/sections/home/advantages";
+import { Contacts } from "./layout/sections/home/сontacts";
+import { Destinations } from "./layout/sections/home/destinations";
+import { FAQ } from "./layout/sections/home/FAQ";
+import { Hero } from "./layout/sections/home/hero";
+import { OwnDestination } from "./layout/sections/home/own-destination";
+import { WhatPeopleSay } from "./layout/sections/home/what-people-say";
+import { WhyUs } from "./layout/sections/home/why-us";
 
 const Home = () => {
   return (

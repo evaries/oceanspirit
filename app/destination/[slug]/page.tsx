@@ -1,8 +1,8 @@
 "use client";
 
-import { BookDialog } from "@/app/components/entities/BookDialog";
-import { SectionImage } from "@/app/components/shared/SectionImage";
-import { scrolltoHash } from "@/app/components/utils";
+import { BookDialog } from "@/app/layout/entities/book-dialog";
+import { SectionImage } from "@/app/layout/shared/section-image";
+import { scrolltoHash } from "@/app/layout/utils";
 import { destinations } from "@/app/data";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
