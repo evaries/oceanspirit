@@ -2,7 +2,7 @@
 
 import { BookDialog } from "@/app/layout/entities/book-dialog";
 import { SectionImage } from "@/app/layout/shared/section-image";
-import { scrolltoHash } from "@/app/layout/utils";
+import { scrollToHash } from "@/app/layout/utils";
 import { destinations } from "@/app/data";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
@@ -31,7 +31,7 @@ const Destination = ({ params }: { params: { slug: string } }) => {
           <Button
             variant={"outline"}
             size={"lg"}
-            onClick={() => scrolltoHash("destination-details")}
+            onClick={() => scrollToHash("destination-details")}
           >
             Learn more
           </Button>
@@ -91,9 +91,9 @@ const Destination = ({ params }: { params: { slug: string } }) => {
               <span className="subtitle-3 block mt-7">What includes:</span>
               <div className="mt-5">
                 <ul>
-                  {content.package.includes.map((item) => {
+                  {content.package.includes.map((item, index) => {
                     return (
-                      <li key={item} className="my-1">
+                      <li key={index} className="my-1">
                         - {item}
                       </li>
                     );

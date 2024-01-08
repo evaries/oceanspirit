@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 
-import { scrolltoHash } from "../../utils";
+import { scrollToHash } from "../../utils";
 
 export const Hero = () => {
   return (
@@ -21,13 +21,13 @@ export const Hero = () => {
           </p>
 
           <div className="grid grid-cols-2 gap-9 pt-10 pb-16">
-            <Button size="lg" onClick={() => scrolltoHash("destinations")}>
+            <Button size="lg" onClick={() => scrollToHash("destinations")}>
               BOOK
             </Button>
             <Button
               size="lg"
               variant="transparent"
-              onClick={() => scrolltoHash("advantages")}
+              onClick={() => scrollToHash("advantages")}
             >
               Learn more
             </Button>

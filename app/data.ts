@@ -25,9 +25,11 @@ export const destination = [
       "Lorem ipsum dolor sit amet, qui minim labore ",
     ],
     direction: "right" as const,
+    imgUrl: "/images/destinations/g-land/spots.png",
+    link: "/destination/g-land",
   },
   {
-    title: "G-Land",
+    title: "Lombok",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
     features: [
@@ -37,9 +39,11 @@ export const destination = [
       "Lorem ipsum dolor sit amet, qui minim labore ",
     ],
     direction: "left" as const,
+    imgUrl: "/images/destinations/g-land/spots.png",
+    link: "/destination/lombok",
   },
   {
-    title: "G-Land",
+    title: "Sumbawa",
     description:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
     features: [
@@ -49,16 +53,12 @@ export const destination = [
       "Lorem ipsum dolor sit amet, qui minim labore ",
     ],
     direction: "right" as const,
+    imgUrl: "/images/destinations/g-land/spots.png",
+    link: "/destination/sumbawa",
   },
 ];
 
 export const faq = [
-  {
-    id: 0,
-    question: "Can i come to the surf camp if i’ve never surfed before?",
-    answer:
-      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
-  },
   {
     id: 1,
     question: "Can i come to the surf camp if i’ve never surfed before?",
@@ -79,6 +79,12 @@ export const faq = [
   },
   {
     id: 4,
+    question: "Can i come to the surf camp if i’ve never surfed before?",
+    answer:
+      "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",
+  },
+  {
+    id: 5,
     question: "Can i come to the surf camp if i’ve never surfed before?",
     answer:
       "Sure, you can. You will start learning to surf from the very basics at the beginners group. All groups are formed based on our students skills and take place at the right locations for your surf level.",

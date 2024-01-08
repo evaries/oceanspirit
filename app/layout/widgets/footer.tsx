@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { scrolltoHash } from "../utils";
+import { scrollToHash } from "../utils";
+import { useRouter } from "next/navigation";
 
 export const Footer = () => {
+  const router = useRouter();
   return (
     <footer className="flex justify-center">
       <div className="grid max-w-[1200px] w-full px-6 items-center flex-col mt-20">
@@ -13,7 +15,7 @@ export const Footer = () => {
           </nav>
           <nav
             className="nav-link text-center cursor-pointer [grid-area:destination]"
-            onClick={() => scrolltoHash("destinations")}
+            onClick={() => router.push("/#destinations")}
           >
             Destinations
           </nav>
@@ -25,7 +27,7 @@ export const Footer = () => {
           </nav>
           <nav
             className="nav-link text-center cursor-pointer [grid-area:contacts]"
-            onClick={() => scrolltoHash("contacts")}
+            onClick={() => scrollToHash("contacts")}
           >
             Contacts
           </nav>

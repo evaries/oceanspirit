@@ -8,6 +8,8 @@ export type DestinationProps = {
   description: string;
   features: string[];
   direction: "left" | "right";
+  imgUrl: string;
+  link: string;
 };
 
 export const Destination: React.FC<DestinationProps> = ({
@@ -15,21 +17,23 @@ export const Destination: React.FC<DestinationProps> = ({
   description,
   direction,
   features,
+  imgUrl,
+  link,
 }) => {
   const isRight = direction === "right";
   return (
     <>
-      <div className="grid grid-flow-row md:grid-cols-2 gap-14 mt-24">
+      <div className="grid grid-flow-row md:grid-cols-2 gap-14 mt-24 max-w-[1024px] w-full mx-auto">
         <div
           className={`image relative max-h-[500px] h-[250px] sm:h-[400px] md:h-full md:max-h-max flex justify-center md:justify-start ${
             isRight ? "order-[-1] md:order-1 " : "md:justify-end"
           } `}
         >
           <Image
-            src="/images/destintaion-lombok.png"
+            src={imgUrl}
             fill={true}
-            objectFit="contain"
-            alt="destination"
+            // objectFit="contain"
+            alt={title}
           />
         </div>
         <div
@@ -47,7 +51,7 @@ export const Destination: React.FC<DestinationProps> = ({
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
             <BookDialog />
             <Button size="lg" variant="outline" asChild>
-              <Link href={"/destination/g-land"}>Learn more</Link>
+              <Link href={link}>Learn more</Link>
             </Button>
           </div>
         </div>
