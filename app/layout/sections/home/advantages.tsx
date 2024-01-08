@@ -3,7 +3,10 @@ import { AdvantagesCard } from "../../entities/advantages-card";
 
 export const Advantages = () => {
   return (
-    <section id="advantages" className="section flex flex-col items-center">
+    <section
+      id="advantages"
+      className="section flex flex-col items-center max-w-[1024px] w-full"
+    >
       <h3 className="subtitle-1 text-center mt-28">
         Enjoy surfing, we will take care of the rest
       </h3>

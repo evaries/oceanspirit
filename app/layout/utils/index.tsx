@@ -1,3 +1,4 @@
+import Router from "next/router";
 import {
   ReactNode,
   RefObject,
@@ -34,7 +35,11 @@ export const useOutsideClick = <T extends HTMLElement = HTMLElement>(
   }, [refs]);
 };
 
-export const scrolltoHash = function (element_id: string) {
+export const scrollToHash = (element_id: string, path?: string) => {
+  if (path) {
+    // window.history.replaceState(null, "", path);
+    console.log("push");
+  }
   const element = document.getElementById(element_id);
   element?.scrollIntoView({
     behavior: "smooth",

@@ -5,7 +5,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Image from "next/image";
-import { scrolltoHash } from "../utils";
+import { scrollToHash } from "../utils";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -80,7 +80,7 @@ export const BurgerMenu = () => {
             <nav
               className="nav-link-mobile"
               onClick={() => {
-                scrolltoHash("contacts");
+                scrollToHash("contacts");
                 close();
               }}
             >
