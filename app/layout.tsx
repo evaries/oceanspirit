@@ -8,13 +8,25 @@ export const metadata: Metadata = {
   description: "Ocean Spirit",
 };
 
+import { Inter, Montserrat } from "next/font/google";
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.className}>
       <body>
         <TopBar />
         {children}
