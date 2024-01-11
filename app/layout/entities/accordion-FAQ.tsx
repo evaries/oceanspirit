@@ -12,7 +12,7 @@ export const AccordionFAQ = () => {
       {faq.map((item) => {
         return (
           <AccordionItem value={`item-${item.id}`} key={item.id}>
-            <AccordionTrigger className="text-xl">
+            <AccordionTrigger className="text-base sm:text-xl">
               {item.question}
             </AccordionTrigger>
             <AccordionContent>{item.answer}</AccordionContent>

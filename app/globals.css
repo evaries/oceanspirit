@@ -92,13 +92,13 @@
    @apply max-w-[1440px] px-6 mx-auto;
   }
   .h2 {
-    @apply text-6xl font-bold;
+    @apply text-6xl font-extrabold;
   }
   .h3 {
-    @apply text-5xl font-bold;
+    @apply text-5xl font-extrabold;
   }
   .subtitle-1 {
-    @apply text-[34px] font-semibold;
+    @apply text-[30px] sm:text-[34px] font-bold;
   }
   .subtitle-2 {
     @apply text-2xl font-semibold;
@@ -107,7 +107,7 @@
     @apply text-xl font-semibold;
   }
   .p {
-    @apply text-xl;
+    @apply text-base sm:text-xl;
   }
   .body{
     @apply text-base;

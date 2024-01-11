@@ -23,7 +23,7 @@ export const Destination: React.FC<DestinationProps> = ({
   const isRight = direction === "right";
   return (
     <>
-      <div className="grid grid-flow-row md:grid-cols-2 gap-14 mt-24 max-w-[1024px] w-full mx-auto">
+      <div className="grid grid-flow-row md:grid-cols-2 gap-8 sm:gap-14 mt-10 sm:mt-24 max-w-[1024px] w-full mx-auto">
         <div
           className={`image relative max-h-[500px] h-[250px] sm:h-[400px] md:h-full md:max-h-max flex justify-center md:justify-start ${
             isRight ? "order-[-1] md:order-1 " : "md:justify-end"
@@ -45,7 +45,11 @@ export const Destination: React.FC<DestinationProps> = ({
           <p className="p mt-3 text-center md:text-left">{description}</p>
           <ul className="mt-5">
             {features.map((feature, index) => {
-              return <li key={index}>{feature}</li>;
+              return (
+                <div key={index} className="flex">
+                  •<li className="ml-1 text-sm sm:text-base">{feature}</li>
+                </div>
+              );
             })}
           </ul>
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
