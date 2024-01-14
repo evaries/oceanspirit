@@ -5,7 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ocean Spirit",
-  description: "Ocean Spirit",
+  description:
+    "Wanna catch the best waves and travel through amazing places? We created the best conditions for your holidays to help you surf, relax, chill and see around!",
   generator: "Ocean Spirit",
   applicationName: "Ocean Spirit",
   referrer: "origin-when-cross-origin",
@@ -27,7 +28,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Ocean Spirit",
-    description: "Ocean Spirit",
+    description:
+      "Wanna catch the best waves and travel through amazing places? We created the best conditions for your holidays to help you surf, relax, chill and see around!",
     url: "https://oceanspirit.vercel.app/_next/image?url=%2Fimages%2Fdestinations%2Fg-land%2Fspots.png&w=828&q=75",
     siteName: "Next.js",
     images: [
@@ -49,7 +51,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ocean Spirit",
-    description: "Ocean Spirit",
+    description:
+      "Wanna catch the best waves and travel through amazing places? We created the best conditions for your holidays to help you surf, relax, chill and see around!",
     siteId: "1467726470533754880",
     creator: "@nextjs",
     creatorId: "1467726470533754880",
