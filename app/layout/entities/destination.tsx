@@ -42,7 +42,7 @@ export const Destination: React.FC<DestinationProps> = ({
           }`}
         >
           <h3 className="subtitle-2 text-center md:text-left">{title}</h3>
-          {/* <p className="p mt-3 text-center md:text-left">{description}</p> */}
+          <p className="p mt-3 text-center md:text-left">{description}</p>
           <ul className="mt-5">
             {features.map((feature, index) => {
               return (
