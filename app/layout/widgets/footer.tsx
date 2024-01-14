@@ -33,15 +33,17 @@ export const Footer = () => {
           </nav>
           <div className="grid [grid-area:divider] mt-4 md:mt-7 h-[1px] bg-black max-w-full w-full" />
           <div className="grid [grid-area:terms] justify-center mt-12 mb-10">
-            <p className="text-center">
-              © {new Date().getFullYear()} Ocean Spirit. All rights reserved.
+            <div>
+              <p className="text-center">
+                © {new Date().getFullYear()} Ocean Spirit. All rights reserved.
+              </p>
               <p className="text-center">
                 created with ❤️ by{" "}
                 <a href="https://twitter.com/yev_henii" target="_blank">
                   yev
                 </a>
               </p>
-            </p>
+            </div>
           </div>
         </div>
       </div>
