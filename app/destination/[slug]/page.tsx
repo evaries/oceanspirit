@@ -33,7 +33,7 @@ const Destination = ({ params }: { params: { slug: string } }) => {
             size={"lg"}
             onClick={() => scrollToHash("destination-details")}
           >
-            Learn more
+            Details
           </Button>
         </div>
       </div>
@@ -84,10 +84,6 @@ const Destination = ({ params }: { params: { slug: string } }) => {
               <span className="subtitle-1 hidden md:block text-center">
                 Details
               </span>
-              <div className="grid grid-rows-2 gap-1">
-                <span>Price: ${content.package.price}</span>
-                <span>Level: {content.package.level}</span>
-              </div>
               <span className="subtitle-3 block mt-7">What includes:</span>
               <div className="mt-5">
                 <ul>
@@ -100,6 +96,14 @@ const Destination = ({ params }: { params: { slug: string } }) => {
                   })}
                 </ul>
               </div>
+            </div>
+            <div className="grid grid-rows-2 gap-1 mt-5">
+              <span className="font-semibold">
+                Level: {content.package.level}
+              </span>
+              <span className="font-semibold">
+                Price: ${content.package.price}
+              </span>
             </div>
             <div className="mt-5">
               <BookDialog triggerClass="w-full" />

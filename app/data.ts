@@ -131,17 +131,17 @@ export const advantages = [
     description: "Relax in comfort between surf sessions",
   },
   {
-    icon: "/icons/ic_house.svg",
+    icon: "/icons/ic_surf.svg",
     title: "Surf with Us",
     description: "Ride the waves with expert guidance",
   },
   {
-    icon: "/icons/ic_house.svg",
+    icon: "/icons/ic_wave.svg",
     title: "Get Inspired",
     description: "Find inspiration in the beauty of the ocean",
   },
   {
-    icon: "/icons/ic_house.svg",
+    icon: "/icons/ic_friend.svg",
     title: "Make Friends",
     description: "Connect and make lifelong friends",
   },
