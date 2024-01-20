@@ -46,16 +46,16 @@ export const Destination: React.FC<DestinationProps> = ({
           <ul className="mt-5">
             {features.map((feature, index) => {
               return (
-                <div key={index} className="flex">
-                  •<li className="ml-1 text-sm sm:text-base">{feature}</li>
-                </div>
+                <li key={index} className="flex">
+                  •<div className="ml-1 text-sm sm:text-base">{feature}</div>
+                </li>
               );
             })}
           </ul>
           <div className="grid grid-cols-2 gap-5 mt-9 max-w-fit">
             <BookDialog />
             <Button size="lg" variant="outline" asChild>
-              <Link href={link}>Learn more</Link>
+              <Link href={link}>About destination</Link>
             </Button>
           </div>
         </div>

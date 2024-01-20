@@ -7,9 +7,9 @@ export const Advantages = () => {
       id="advantages"
       className="section flex flex-col items-center max-w-[1024px] w-full"
     >
-      <h3 className="subtitle-1 text-center mt-28">
+      <h2 className="subtitle-1 text-center mt-28">
         Enjoy surfing, we will take care of the rest
-      </h3>
+      </h2>
       <p className="body mt-7 text-center">
         Wanna catch the best waves and travel through amazing places? <br /> We
         created the best conditions for your holidays to help you surf, relax,
